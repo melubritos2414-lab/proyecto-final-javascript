@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presupuesto - Mirna Web Studio</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">Mirna Web Studio</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="presupuesto.html" class="activo">Presupuesto</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="presupuesto">
+      <h1>Calcula tu Presupuesto</h1>
+
+      <form id="form-presupuesto">
+
+        <h2>Datos personales</h2>
+
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" required>
+
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos" required>
+
+        <label for="telefono">Teléfono</label>
+        <input type="text" id="telefono" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <h2>Proyecto</h2>
+
+        <label for="producto">Tipo de proyecto</label>
+        <select id="producto">
+          <option value="web" data-precio="500">Página Web - 500€</option>
+          <option value="tienda" data-precio="900">Tienda Online - 900€</option>
+          <option value="branding" data-precio="300">Branding - 300€</option>
+        </select>
+
+        <h3>Extras</h3>
+        <label><input type="checkbox" class="extra" data-precio="100"> SEO (+100€)</label>
+        <label><input type="checkbox" class="extra" data-precio="150"> Mantenimiento (+150€)</label>
+        <label><input type="checkbox" class="extra" data-precio="80"> Hosting (+80€)</label>
+
+        <h3>Plazo de entrega</h3>
+        <select id="plazo">
+          <option value="normal">Normal</option>
+          <option value="rapido">Rápido (+20%)</option>
+        </select>
+
+        <div class="condiciones">
+          <input type="checkbox" id="condiciones">
+          <label for="condiciones">Acepto las condiciones</label>
+        </div>
+
+        <div id="resultado">Total: 0€</div>
+
+        <button type="submit" id="enviar">Enviar</button>
+        <button type="reset">Limpiar</button>
+
+      </form>
+    </section>
+  </main>
+
+   <footer class="footer">
+    <div class="footer-col izquierda">
+      <p>Mirna Web Studio - Calle Ficticia 123 - Ciudad</p>
+    </div>
+
+    <div class="footer-col centro">
+      <p><a href="#">Aviso legal</a> - <a href="#">Política de privacidad</a></p>
+    </div>
+
+    <div class="footer-col derecha">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <script src="../js/presupuesto.js"></script>
+</body>
+</html>

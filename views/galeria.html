@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería - Mirna Web Studio</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">Mirna Web Studio</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="galeria.html" class="activo">Galería</a></li>
+        <li><a href="presupuesto.html">Presupuesto</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="galeria">
+      <h2>Galería dinámica</h2>
+      <div class="contenedor-miniaturas" id="miniaturas"></div>
+
+      <div class="modal" id="modal">
+        <span id="cerrar">&times;</span>
+        <img id="imagen-ampliada" src="" alt="Imagen ampliada">
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-col izquierda">
+      <p>Mirna Web Studio - Calle Ficticia 123 - Ciudad</p>
+    </div>
+
+    <div class="footer-col centro">
+      <p><a href="#">Aviso legal</a> - <a href="#">Política de privacidad</a></p>
+    </div>
+
+    <div class="footer-col derecha">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <script src="../js/galeria.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+</html>
